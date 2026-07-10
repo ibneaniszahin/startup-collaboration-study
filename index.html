@@ -240,8 +240,15 @@ svg#map{display:block;width:100%;height:auto}
 .compliance summary::-webkit-details-marker{display:none}
 .compliance .sum-k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);flex:none}
 .compliance .sum-t{font-size:15px;color:var(--ink)}
-.compliance .chev{margin-left:auto;flex:none;width:9px;height:9px;border-right:1.6px solid var(--slate);border-bottom:1.6px solid var(--slate);transform:rotate(45deg);transition:transform .25s}
-.compliance[open] .chev{transform:rotate(-135deg)}
+.compliance .chev{margin-left:auto;flex:none;align-self:center;width:32px;height:32px;border:1.5px solid var(--teal-deep);border-radius:50%;background:var(--teal-soft);position:relative;transition:transform .25s,background .2s}
+.compliance .chev::after{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;border-right:2px solid var(--teal-deep);border-bottom:2px solid var(--teal-deep);transform:translate(-50%,-68%) rotate(45deg)}
+.compliance summary:hover .chev{background:var(--teal-deep)}
+.compliance summary:hover .chev::after{border-color:var(--card)}
+.compliance[open] .chev{transform:rotate(180deg)}
+.figfold .fig5{border:0;margin:0}
+.figfold .cbody{padding:0}
+.figfold .fig5 .cap{border-top:1px solid var(--paper-deep)}
+.foldnote{font-size:15px;color:var(--slate);margin-top:26px;margin-bottom:22px}
 .compliance .cbody{border-top:1px solid var(--hairline);padding:6px 22px 20px}
 .compliance .cnote{font-size:14px;color:var(--ink-soft);padding:14px 0 12px;text-wrap:pretty}
 .crow{display:grid;grid-template-columns:190px 1fr 1fr;gap:14px;padding:11px 0;border-top:1px dashed var(--hairline);align-items:baseline}
@@ -573,14 +580,19 @@ footer .row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;m
   <div class="wrap">
     <div class="shead"><span class="n">03</span><span class="k">Where the paper points</span></div>
     <h2>From diagnosis to design</h2>
-    <p class="lede">The study closes with a proposal, not just a problem. Figure 5 sketches a direct-link horizontal collaboration network with SBL and BIDA as principal coordinating entities &mdash; BIDA because it sits under the Prime Minister&rsquo;s Office and already runs cross-agency machinery through the One Stop Service Act. A structured platform of that kind targets exactly what the map shows missing: lateral channels between agencies.</p>
+    <p class="lede">The study closes with a proposal, not just a problem: a direct-link horizontal collaboration network, with SBL and BIDA as the principal coordinating entities &mdash; BIDA because it sits under the Prime Minister&rsquo;s Office and already runs cross-agency machinery through the One Stop Service Act. A structured platform of that kind targets exactly what the map shows missing: lateral channels between agencies.</p>
+    <p class="lede foldnote">Two reference figures sit folded below for quick readers &mdash; expand them to see the proposed network as the paper draws it, and which agency owns which compliance issue. The survey behind the map, and where the work goes next, follow.</p>
 
     
-    <div class="fig5">
-      <div class="fh"><span>Figure 5 &middot; Direct-link startup collaboration network</span><span>SBL + BIDA as principal coordinating entities</span></div>
+    <details class="compliance figfold">
+      <summary><span class="sum-k">The proposal &middot; Figure 5</span><span class="sum-t">View the direct-link collaboration network &mdash; SBL + BIDA as the coordinating hub</span><span class="chev" aria-hidden="true"></span></summary>
+      <div class="cbody">
+        <div class="fig5">
       <svg viewBox="0 0 940 530" role="img" aria-label="Direct-link startup collaboration network: SBL and BIDA as a coordinating hub joined to twelve agencies and ministries."><line class="f5-edge" x1="470" y1="199" x2="470" y2="70"/><rect class="f5-box" x="446" y="54" width="49" height="32" rx="8"/><text class="f5-label" x="470" y="74" text-anchor="middle">NBR</text><line class="f5-edge" x1="529" y1="208" x2="645" y2="96"/><rect class="f5-box" x="617" y="80" width="56" height="32" rx="8"/><text class="f5-label" x="645" y="100" text-anchor="middle">BSEC</text><line class="f5-edge" x1="572" y1="232" x2="773" y2="168"/><rect class="f5-box" x="745" y="152" width="56" height="32" rx="8"/><text class="f5-label" x="773" y="172" text-anchor="middle">RJSC</text><line class="f5-edge" x1="588" y1="265" x2="820" y2="265"/><rect class="f5-box" x="750" y="249" width="140" height="32" rx="8"/><text class="f5-label" x="820" y="269" text-anchor="middle">Bangladesh Bank</text><line class="f5-edge" x1="572" y1="298" x2="773" y2="362"/><rect class="f5-box" x="715" y="346" width="117" height="32" rx="8"/><text class="f5-label" x="773" y="366" text-anchor="middle">ICT Division</text><line class="f5-edge" x1="529" y1="322" x2="645" y2="434"/><rect class="f5-box" x="571" y="418" width="148" height="32" rx="8"/><text class="f5-label" x="645" y="438" text-anchor="middle">Local Government</text><line class="f5-edge" x1="470" y1="331" x2="470" y2="460"/><rect class="f5-box" x="381" y="444" width="178" height="32" rx="8"/><text class="f5-label" x="470" y="464" text-anchor="middle">Ministry of Commerce</text><line class="f5-edge" x1="411" y1="322" x2="295" y2="434"/><rect class="f5-box" x="198" y="418" width="193" height="32" rx="8"/><text class="f5-label" x="295" y="438" text-anchor="middle">Ministry of Industries</text><line class="f5-edge" x1="368" y1="298" x2="167" y2="363"/><rect class="f5-box" x="63" y="347" width="208" height="32" rx="8"/><text class="f5-label" x="167" y="367" text-anchor="middle">Ministry of Labor &amp; Emp.</text><line class="f5-edge" x1="352" y1="265" x2="120" y2="265"/><rect class="f5-box" x="20" y="249" width="201" height="32" rx="8"/><text class="f5-label" x="120" y="269" text-anchor="middle">Ministry of Environment</text><line class="f5-edge" x1="368" y1="232" x2="167" y2="167"/><rect class="f5-box" x="70" y="151" width="193" height="32" rx="8"/><text class="f5-label" x="167" y="171" text-anchor="middle">Consumers' Rights Dir.</text><line class="f5-edge" x1="411" y1="208" x2="295" y2="96"/><rect class="f5-box" x="206" y="80" width="178" height="32" rx="8"/><text class="f5-label" x="295" y="100" text-anchor="middle">Stakeholder Ministry</text><ellipse class="f5-hub" cx="470" cy="265" rx="118" ry="66"/><text class="f5-hubt" x="470" y="263" text-anchor="middle">SBL + BIDA</text><text class="f5-hubs" x="470" y="285" text-anchor="middle">coordinating hub</text></svg>
       <p class="cap">Redrawn from the paper&rsquo;s Figure 5. The fragmented network at the top of this page is the diagnosis; this is the paper&rsquo;s proposed shape of the fix &mdash; lateral channels, built around a hub.</p>
     </div>
+      </div>
+    </details>
 
     <details class="compliance">
       <summary><span class="sum-k">Reference &middot; Figure 4</span><span class="sum-t">View the compliance map &mdash; which agency owns which startup compliance issue</span><span class="chev" aria-hidden="true"></span></summary>
