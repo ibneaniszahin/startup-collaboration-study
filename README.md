@@ -1,4 +1,4 @@
-# Bangladesh Startup Ecosystem Collaboration Study
+# Collaboration in the Bangladesh Startup Ecosystem
 
 An explorable version of my peer-reviewed study, **"Startup support in emerging
 economies: a study of collaboration among government agencies in Bangladesh"**
@@ -12,7 +12,7 @@ collaboration map (built with USAID's collaboration mapping instrument), the
 cultural mechanisms behind it, and the paper's proposals — explorable in minutes
 instead of eighteen pages.
 
-**Live page:** https://ibneaniszahin.github.io/startup-coordination-study/
+**Live page:** https://ibneaniszahin.github.io/startup-collaboration-study/
 **Full paper (DOI):** https://doi.org/10.1108/APJIE-06-2024-0140
 
 Fieldwork 2024 · 15 organizations · mixed-methods (interviews, document analysis,
