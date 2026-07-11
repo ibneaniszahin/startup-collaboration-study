@@ -106,7 +106,6 @@ p.dropcap::first-letter{font-family:var(--display);font-size:74px;line-height:.7
 .scrolly{position:relative;background:var(--paper-deep);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
 .scrolly-grid{display:grid;grid-template-columns:minmax(0,1fr) 372px;max-width:1260px;margin:0 auto}
 .map-stage{position:sticky;top:0;height:100vh;height:100svh;display:flex;flex-direction:column;justify-content:center;padding:24px 10px 24px 24px}
-  .map-frame{max-width:540px;margin:0 auto;width:100%}
 .map-frame{background:var(--card);border:1px solid var(--hairline);box-shadow:0 30px 70px -42px rgba(21,35,43,.35)}
 .map-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:15px 20px;border-bottom:1px solid var(--hairline)}
 .map-head .t{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase}
@@ -243,8 +242,6 @@ svg#map{display:block;width:100%;height:auto}
 .compliance .sum-t{font-size:15px;color:var(--ink)}
 .compliance .chev{margin-left:auto;flex:none;align-self:center;width:32px;height:32px;border:1.5px solid var(--teal-deep);border-radius:50%;background:var(--teal-soft);position:relative;transition:transform .25s,background .2s}
 .compliance .chev::after{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;border-right:2px solid var(--teal-deep);border-bottom:2px solid var(--teal-deep);transform:translate(-50%,-68%) rotate(45deg)}
-.compliance summary:hover .chev{background:var(--teal-deep)}
-.compliance summary:hover .chev::after{border-color:var(--card)}
 .compliance[open] .chev{transform:rotate(180deg)}
 .figfold .fig5{border:0;margin:0}
 .figfold .cbody{padding:0}
@@ -338,6 +335,19 @@ footer .row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;m
   .hero-inner{padding:96px 24px 90px}
 }
 :focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+/* ---------- fold summaries: touch-safe hover, mobile stacking, tablet map cap ---------- */
+@media (hover:hover){
+  .compliance summary:hover .chev{background:var(--teal-deep)}
+  .compliance summary:hover .chev::after{border-color:var(--card)}
+}
+@media (max-width:920px){
+  .map-frame{max-width:540px;margin:0 auto;width:100%}
+  .compliance summary{flex-wrap:wrap;row-gap:10px;align-items:center;-webkit-tap-highlight-color:transparent}
+  .compliance .sum-k{flex:none}
+  .compliance .chev{margin-left:auto}
+  .compliance .sum-t{flex-basis:100%;order:3;font-size:15.5px;line-height:1.45}
+}
 </style>
 </helmet>
 
