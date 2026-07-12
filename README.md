@@ -13,6 +13,7 @@ cultural mechanisms behind it, and the paper's proposals — explorable in minut
 instead of eighteen pages.
 
 **Live page:** https://ibneaniszahin.github.io/startup-collaboration-study/
+
 **Full paper (DOI):** https://doi.org/10.1108/APJIE-06-2024-0140
 
 Fieldwork 2024 · 15 organizations · mixed-methods (interviews, document analysis,
