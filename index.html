@@ -133,6 +133,8 @@ svg#map{display:block;width:100%;height:auto}
 .hub-ring.off{opacity:0}
 .zone-label{font-family:var(--mono);font-size:9px;fill:var(--slate);letter-spacing:.1em;text-transform:uppercase;transition:opacity .5s}
 .zone-label.off{opacity:0}
+.tap-chip rect{fill:var(--teal-deep)}
+.tap-chip text{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;fill:#FFFFFF}
 .sector-corner{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;fill:var(--slate);opacity:.7;transition:fill .4s,opacity .4s,font-weight .4s}
 .sector-corner.on{fill:var(--teal);opacity:1;font-weight:600}
 .node:hover circle.body,.node:focus-visible circle.body{stroke:var(--ink);stroke-width:2}
@@ -426,7 +428,8 @@ footer .row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;m
           <text id="corner-gov" class="sector-corner" x="572" y="48" text-anchor="end">Government agencies</text>
           <text id="corner-start" class="sector-corner" x="68" y="508" text-anchor="start">Startups</text>
           <text id="corner-acad" class="sector-corner" x="572" y="508" text-anchor="end">Academia</text>
-          <g id="nodes"></g>
+          <g class="tap-chip" aria-hidden="true"><rect x="446" y="440" width="136" height="26" rx="13"/><text x="514" y="457" text-anchor="middle">TAP ANY CIRCLE</text></g>
+            <g id="nodes"></g>
           <g id="sbl-node" tabindex="0" role="button" aria-label="Startup Bangladesh Ltd — open notes">
             <circle cx="320" cy="260" r="26"></circle>
             <text x="320" y="264" text-anchor="middle">SBL</text>
@@ -436,7 +439,7 @@ footer .row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;m
           <span class="li"><span class="dot sm"></span><span class="dot lg"></span>size = startup literacy</span>
           <span class="li"><span class="gradbar"></span>darker = more information flow</span>
           <span class="li">distance = relationship strength</span>
-          <span class="li tap">tap any circle</span>
+          
         </div>
       </div>
     </div>
